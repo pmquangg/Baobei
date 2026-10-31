@@ -171,7 +171,7 @@
     });
 
     // Replace these image paths with your own photographs.
-    const imageFiles=['assets/photo-1.jpg','assets/photo-2.jpg','assets/photo-3.jpg','assets/photo-4.jpg'];
+    const imageFiles=['photo-1.jpg','photo-2.jpg','photo-3.jpg','photo-4.jpg'];
     document.querySelectorAll('.photo').forEach((figure,index)=>{
       const img=new Image();img.src=imageFiles[index];
       img.onload=()=>{figure.querySelector('.placeholder').replaceWith(img)};
